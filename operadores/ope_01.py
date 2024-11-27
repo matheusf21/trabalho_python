@@ -1,20 +1,20 @@
-# Solicita dois números ao usuário
+# Solicitar dois números ao usuário
 num1 = float(input("Digite o primeiro número: "))
 num2 = float(input("Digite o segundo número: "))
 
-# Calcula as operações
+# Realizar as operações
 soma = num1 + num2
 subtracao = num1 - num2
 multiplicacao = num1 * num2
 
-# Verifica se o segundo número é diferente de zero antes de dividir
+# Verificar se a divisão é possível
 if num2 != 0:
     divisao = num1 / num2
+    print(f"A divisão do primeiro número pelo segundo é {divisao:.2f}.")
 else:
-    divisao = "Indefinida (não é possível dividir por zero)"
+    print("A divisão por zero não é possível.")
 
-# Exibe os resultados
-print(f"Soma: {soma}")
-print(f"Subtração: {subtracao}")
-print(f"Multiplicação: {multiplicacao}")
-print(f"Divisão: {divisao}")
+# Exibir os resultados
+print(f"A soma dos números é {soma}.")
+print(f"A subtração do primeiro número pelo segundo é {subtracao}.")
+print(f"A multiplicação dos números é {multiplicacao}.")
